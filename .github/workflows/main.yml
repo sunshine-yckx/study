@@ -24,6 +24,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/an0na/MyActions.git"
-          source_branch: "master"
+          source_branch: "main"
           destination_branch: "master"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
